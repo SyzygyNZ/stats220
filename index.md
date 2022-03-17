@@ -29,3 +29,9 @@ meme <- image_append(meme, stack = TRUE)
 image_write(meme, "my_meme.png")
 
 ```
+### Things I found easy  
+-Deciding on the meme
+-Annotating the image  
+### Things I found hard
+1. Using image_append as I didn't really need anything else for the meme so I made a bad watermark
+2. Swapping between coding languages through multiple CompSci papers is quite hard
