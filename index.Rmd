@@ -1,0 +1,97 @@
+---
+title: "Assignment 1"
+subtitle: "STATS 220 Semester One 2022"
+author: "Daniel Morrissey"
+date: '2022-03-17'
+output: html_document
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, error = FALSE, warning = FALSE)
+```
+
+```{css}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Playfair+Display:wght@500&display=swap');
+body{font-family: 'Noto Sans', sans-serif;}
+h2 {font-family: 'Playfair Display', serif;}
+body{background-color: #FAEBD7;}
+
+
+```
+## GitHub repository information
+
+[https://github.com/SyzygyNZ/stats220](https://github.com/SyzygyNZ/stats220)
+
+In this repository I am showing my learning process of making a meme with R code and creating an animated GIF using R Markdown.
+
+
+
+
+
+## Animated GIF creation
+
+Here is an animated GIF of my name in a circle.
+
+```{r pressure, echo=TRUE}
+library(magick)
+
+#I tried using my own rectangle but would get an ImproperImageHeader error and was pretty over it
+circle_image <- image_read("images/circle.png")%>%
+  image_scale(700)
+#Each frame scales up and adds and extra letter of my name
+frame1 <- circle_image %>%
+  image_annotate(text = "D", size = 100, gravity = "center") %>%
+  image_scale(200) %>%
+  image_border("red", "10x10") %>%
+  image_extent("700x700")
+
+frame2 <- circle_image %>%
+  image_annotate(text = "DA", size = 100, gravity = "center") %>%
+  image_scale(300) %>%
+  image_border("red", "10x10") %>%
+  image_extent("700x700")
+
+frame3 <- circle_image %>%
+  image_annotate(text = "DAN", size = 100, gravity = "center") %>%
+  image_scale(400) %>%
+  image_border("red", "10x10") %>%
+  image_extent("700x700")
+
+frame4 <- circle_image %>%
+  image_annotate(text = "DANI", size = 100, gravity = "center") %>%
+  image_scale(500)%>%
+  image_border("red", "10x10") %>%
+  image_extent("700x700")
+
+frame5 <- circle_image %>%
+  image_annotate(text = "DANIE", size = 100, gravity = "center") %>%
+  image_scale(600)%>%
+  image_border("red", "10x10") %>%
+  image_extent("700x700")
+
+frame6 <- circle_image %>%
+  image_annotate(text = "DANIEL", size = 100, gravity = "center") %>%
+  image_border("red", "10x10") %>%
+  image_scale(700)
+
+# putting the frames in order using a vector
+# repeated frame 6 multiple times to let my name stay there longer
+frames <- c(frame1, frame2, frame3, frame4, frame5, frame6, frame6, frame6)
+
+# creating an animation
+image_morph(frames) %>%
+  image_animate(fps = 5)
+```
+
+
+
+
+
+
+
+## Learning Reflection
+
+One of the important ideas I learned during this module is how fluid programming can be when combining R code, HTML and R markdown. It certainly simplifies the overall task and can all be done in one IDE. Being able to embed R code when needed, being able to show and hide certain aspects and then being able to use CSS to visually improve your document helps streamline programming. I am curious to see how far this can be extended to streamline and automate processes even more and cut out as many mundane tasks as possible.And, of course, how much it will help me improve my meme game.  
+
+
+
