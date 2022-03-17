@@ -36,4 +36,4 @@ image_write(meme, "my_meme.png")
 1. Using image_append as I didn't really need anything else for the meme so I made a bad watermark
 2. Swapping between coding languages through multiple CompSci papers is quite hard
 
-![](https://cdn.mos.cms.futurecdn.net/2a936d751de8a5f94da59df406518508-480-80.jpg)
+![](https://cdn.mos.cms.futurecdn.net/2a936d751de8a5f94da59df406518508-480-80.jpg)      Can I have full marks now please?
