@@ -30,7 +30,7 @@ image_write(meme, "my_meme.png")
 
 ```
 ### Things I found easy  
--Deciding on the meme
+-Deciding on the meme  
 -Annotating the image  
 ### Things I found hard
 1. Using image_append as I didn't really need anything else for the meme so I made a bad watermark
