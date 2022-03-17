@@ -1,1 +1,1 @@
-# stats220
+# [stats220](https://github.com/SyzygyNZ/stats220)
