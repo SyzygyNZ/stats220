@@ -11,7 +11,7 @@ For a lot of my uni work I find myself putting things off until the last minute 
 
 The R code I used to create this meme is as follows:
 
-'''
+```
 library(magick)
 Me <- c("Me")
 
@@ -28,4 +28,4 @@ meme <- c(balloon, stats220)
 meme <- image_append(meme, stack = TRUE)
 image_write(meme, "my_meme.png")
 
-'''
+```
