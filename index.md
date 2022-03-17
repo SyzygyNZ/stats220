@@ -37,4 +37,4 @@ image_write(meme, "my_meme.png")
 2. Swapping between coding languages through multiple CompSci papers is quite hard
 
 ![](https://cdn.mos.cms.futurecdn.net/2a936d751de8a5f94da59df406518508-480-80.jpg)  
-I hope this is enough for full marks...
+~~Maybe this cat image will increase my chances for better marks~~
